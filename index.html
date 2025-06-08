@@ -55,7 +55,7 @@
   </footer>
 
   <script>
-    const transactions = [
+    transactions = [
       { id: 1, type: "Credit", description: "Salary payment", receiver: "User", amount: "£2500.00" },
       { id: 2, type: "Withdrawal", description: "Cash ATM withdrawal", receiver: "Cash Machine", amount: "£100.00" },
       { id: 3, type: "Transfer", description: "Sent to friend", receiver: "John", amount: "£150.00"},
@@ -68,8 +68,8 @@
       { id: 10, type: "Transfer", description: "Paid to friend", receiver: "Emma", amount: "£20.00"}
     ];
 
-    const contacts = ["John", "Amazon", "Tesco", "Argos", "Landlord", "Emma"];
-    const userBalance = 1200.50;
+    contacts = ["John", "Amazon", "Tesco", "Argos", "Landlord", "Emma"];
+    userBalance = 1200.50;
     document.getElementById("userBalance").textContent = `£${userBalance.toFixed(2)}`;
 
     const transactionTable = document.getElementById("transactionTable");
